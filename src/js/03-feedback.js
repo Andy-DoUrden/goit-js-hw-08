@@ -8,7 +8,10 @@ const refs = {
 
 const STORAGE_KEY = 'feedback-form-state';
 
-const formDataObj = {};
+const formDataObj = {
+  [refs.input.name]: '',
+  [refs.textarea.name]: '',
+};
 
 loadTextarea();
 refs.form.addEventListener('submit', onFormSubmit);
